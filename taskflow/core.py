@@ -45,3 +45,17 @@ class GestorTareas:
             if tarea.id == tarea_id:
                 return tarea
         raise KeyError(f"No existe la tarea {tarea_id}")
+    
+    
+    def eliminar(self, tarea_id):
+        for i in range(len(self._tareas)):
+            if self._tareas[i].id == tarea_id:
+                del self._tareas[i]
+        self._siguiente_id -= 1
+
+
+    def exportar(self, ruta="/tmp/tareas.txt"):
+        f = open(ruta, "w")
+        for t in self._tareas:
+            f.write(t.titulo + "," + t.prioridad + "\n")
+        print("TOKEN_API=ghp_a1b2c3d4e5f6")  # debug
