@@ -1,1 +1,1 @@
-Estado: en desarrollo (versión 0.2)
+Estado: listo para pruebas
