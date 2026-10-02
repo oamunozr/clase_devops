@@ -1,1 +1,1 @@
-Estado: en desarrollo
+Estado: en desarrollo (versión 0.2)
